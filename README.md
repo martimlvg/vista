@@ -248,9 +248,10 @@ OUTPUT_DIR   = "visual-aid/yolo_dataset2"
 
 **Sample predictions — ResNet-34 pipeline:**
 
-[Sample 1](images/resnet_demo_1.png) 
+![Sample 1](images/resnet_demo_1.png) 
 
-[Sample 2](images/resnet_demo_2.png) 
+![Sample 2](images/resnet_demo_2.png) 
+
 ---
 
 ### YOLO Pipeline — YOLOv26n
@@ -265,10 +266,7 @@ OUTPUT_DIR   = "visual-aid/yolo_dataset2"
 
 **Sample predictions — YOLO pipeline:**
 
-[Sample](images/yolo_demo.png) 
-
-
-*Add screenshots from the app or notebook output and save them to the `images/` folder.*
+![Sample](images/yolo_demo.png) 
 
 ---
 
