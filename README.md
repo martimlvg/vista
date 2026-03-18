@@ -37,17 +37,6 @@ Two independent approaches were developed and compared:
 
 ---
 
-## 🚀 Live Demos
-
-| App | Description | Link |
-|-----|-------------|------|
-| VISTA — ResNet Pipeline | Segmentation-based damage assessment (ResNet-34) | [Launch app](https://famishedly-superelegant-gavin.ngrok-free.dev/) |
-| VISTA — YOLO Pipeline | Detection-based damage assessment (YOLOv26) | [Launch app](https://sanjuana-unquerulous-subchronically.ngrok-free.dev/) |
-
-> **Note:** Demo apps are hosted on ngrok and may require occasional restart. If unavailable, please check back later or contact the maintainers.
-
----
-
 ## 🗃️ Dataset
 
 The project uses the **xBD dataset** from the [xView2 Building Damage Assessment Challenge](https://xview2.org/).
