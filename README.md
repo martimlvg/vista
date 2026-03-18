@@ -3,7 +3,7 @@
 <img src="images/Vista-Highres.png" width="450">
 
 
-**VISTA** was developed as the final project of the Data Science & AI Bootcamp at Le Wagon Barcelona by a [team of 3](#contributors), completed in 2 weeks in March 2026. 
+**VISTA** was developed as the final project of the Data Science & AI Bootcamp at Le Wagon Barcelona by a [team of 3](#-contributors), completed in 2 weeks in March 2026. 
 
 This is a computer vision-powered building damage assessment from satellite imagery. Two independent pipelines were developed and benchmarked classifying post-disaster damage at pixel level: semantic segmentation (ResNet+U-Net) and object detection (YOLO).
 
@@ -11,17 +11,16 @@ This is a computer vision-powered building damage assessment from satellite imag
 
 ## 📋 Table of Contents
 
-- [Overview](#overview)
-- [Live Demos](#live-demos)
-- [Dataset](#dataset)
-- [Model Architectures](#model-architectures)
-- [Pipeline](#pipeline)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Results](#results)
-- [Project Structure](#project-structure)
-- [Contributors](#contributors)
-- [References](#references)
+- [Overview](#-overview)
+- [Dataset](#️-dataset)
+- [Model Architectures](#-model-architectures)
+- [Pipeline](#️-pipeline)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Results](#-results)
+- [Project Structure](#️-project-structure)
+- [Contributors](#-contributors)
+- [References](#-references)
 
 ---
 
