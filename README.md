@@ -330,6 +330,9 @@ vista-damage-assessment/
 - **xView2 First-Place Solution:**  
   [github.com/DIUx-xView/xView2_first_place](https://github.com/DIUx-xView/xView2_first_place)
 
+- **xView2 YOLO v.8 Solution:**  
+  [https://www.kaggle.com/code/satvikjain09/ce712-yolov8](https://www.kaggle.com/code/satvikjain09/ce712-yolov8)
+
 - **ResNet:** He et al. — "Deep Residual Learning for Image Recognition" (CVPR 2016)
 
 - **U-Net:** Ronneberger et al. — "U-Net: Convolutional Networks for Biomedical Image Segmentation" (MICCAI 2015)
