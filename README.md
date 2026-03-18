@@ -301,6 +301,16 @@ vista-damage-assessment/
 
 ---
 
+## 👥 Contributors
+
+| Name | GitHub |
+|------|--------|
+| Edison Kruger | [@EKRUGER-BCN](https://github.com/EKRUGER-BCN) |
+| Ildebrando Jesus | [@ijesusjr](https://github.com/ijesusjr) |
+| Martim Gomes | [@martimlvg](https://github.com/martimlvg) |
+
+---
+
 ## 📚 References
 
 - **xView2 Dataset & Challenge:** [xview2.org](https://xview2.org/)  
