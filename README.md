@@ -42,6 +42,23 @@ Two independent approaches were developed and compared:
 
 ---
 
+## 📱 App Screenshots
+
+A PDF with full screenshots of both Streamlit apps is available for reference:
+
+📄 **[View App Screenshots (PDF)](demo_app/print_demo_app.pdf)**
+
+The demos showcased:
+- Upload of pre and post-disaster satellite image pairs
+- Real-time damage classification visualization
+- Color-coded damage maps (🟢 No damage · 🟠 Damaged · 🔴 Destroyed)
+- Side-by-side comparison of predictions vs. satellite imagery
+
+> ⚠️ **Live demos are currently unavailable** due to storage limitations. Please refer to the app screenshots above for a preview of what was developed.
+
+---
+
+
 ## 🗃️ Dataset
 
 The project uses the **xBD dataset** from the [xView2 Building Damage Assessment Challenge](https://xview2.org/).
@@ -308,11 +325,11 @@ vista-damage-assessment/
 
 ## 👥 Contributors
 
-| Name | GitHub |
-|------|--------|
-| Edison Kruger | [@EKRUGER-BCN](https://github.com/EKRUGER-BCN) |
-| Ildebrando Jesus | [@ijesusjr](https://github.com/ijesusjr) |
-| Martim Gomes | [@martimlvg](https://github.com/martimlvg) |
+| Name | GitHub | LinkedIn |
+|------|--------|----------|
+| Edison Kruger | [@EKRUGER-BCN](https://github.com/EKRUGER-BCN) | [https://www.linkedin.com/in/edisonkruger](https://www.linkedin.com/in/edisonkruger/)
+| Ildebrando Jesus | [@ijesusjr](https://github.com/ijesusjr) | [https://www.linkedin.com/in/ijesus/](https://www.linkedin.com/in/ijesus/)
+| Martim Gomes | [@martimlvg](https://github.com/martimlvg) | [https://www.linkedin.com/in/martim-gomes-595a88361/](https://www.linkedin.com/in/martim-gomes-595a88361/)
 
 ---
 
