@@ -12,6 +12,7 @@ This is a computer vision-powered building damage assessment from satellite imag
 ## 📋 Table of Contents
 
 - [Overview](#-overview)
+- [App Screenshots](#-app-screenshots)
 - [Dataset](#️-dataset)
 - [Model Architectures](#-model-architectures)
 - [Pipeline](#️-pipeline)
