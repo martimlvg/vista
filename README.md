@@ -1,6 +1,6 @@
 # VISTA: Visual Intelligence for Satellite Threat Analysis
 
-<img src="images/Vista-Highres-transp.png" width="450">
+<img src="images/Vista-Highres.png" width="450">
 
 
 **VISTA** was developed as the final project of the Data Science & AI Bootcamp at Le Wagon Barcelona by a [team of 3](#contributors), completed in 2 weeks in March 2026. 
