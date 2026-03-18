@@ -295,23 +295,24 @@ OUTPUT_DIR   = "visual-aid/yolo_dataset2"
 
 ```
 vista-damage-assessment/
-├── xView2_first_place_3_classes/
-│   ├── zoo/
-│   │   ├── models.py          # ResNet-34 U-Net variants
-│   │   ├── senet.py
-│   │   └── dpn.py
-│   ├── train34_loc.py         # Localization training (ResNet-34)
-│   ├── train34_cls.py         # Classification training (ResNet-34, 3 classes)
-│   ├── tune34_cls.py          # Fine-tuning (ResNet-34)
-│   ├── utils.py               # Augmentations, metrics, preprocessing
-│   ├── losses.py              # ComboLoss, DiceLoss, FocalLoss
-│   ├── adamw.py               # AdamW optimizer
-│   └── weights/               # Saved model checkpoints
+├── resnet/
+│   ├── app/
+│   │   ├── zoo/
+│   │   │   ├── models.py          # ResNet-34 U-Net variants
+│   │   │   ├── senet.py
+│   │   │   └── dpn.py
+│   │   ├── train34_loc.py         # Localization training (ResNet-34)
+│   │   ├── train34_cls.py         # Classification training (ResNet-34, 3 classes)
+│   │   ├── create_masks.py        # Generate ground truth masks from JSON labels
+│   │   ├── utils.py               # Augmentations, metrics, preprocessing
+│   │   ├── losses.py              # ComboLoss, DiceLoss, FocalLoss
+│   │   ├── adamw.py               # AdamW optimizer
+│   │   └── weights/               # Saved model checkpoints
+│   └── xview2_pipeline_res34_3_classes.ipynb
 ├── yolo/
-│   ├── ce712-yolov8_log.ipynb # YOLOv26 training & evaluation notebook
-│   └── runs/detect/           # Training outputs, weights, metrics
-├── images/                    # README screenshots and sample predictions
-├── xview2_pipeline_res34_3_classes.ipynb
+│   ├── xview2_pipeline_yolo_3_classes.ipynb     # YOLOv26 training & evaluation notebook
+│   └── runs/detect/               # Training outputs, weights, metrics
+├── images/                        # README screenshots and sample predictions
 └── README.md
 ```
 
