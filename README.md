@@ -248,14 +248,9 @@ OUTPUT_DIR   = "visual-aid/yolo_dataset2"
 
 **Sample predictions — ResNet-34 pipeline:**
 
-| Pre-disaster | Post-disaster | Localization mask | Damage classification |
-|:---:|:---:|:---:|:---:|
-| ![pre](images/resnet_sample_pre.png) | ![post](images/resnet_sample_post.png) | ![loc](images/resnet_sample_loc.png) | ![dmg](images/resnet_sample_dmg.png) |
+[Sample 1](images/resnet_demo_1.png) 
 
-> 🟢 No damage &nbsp;·&nbsp; 🟠 Damaged &nbsp;·&nbsp; 🔴 Destroyed
-
-*Add screenshots from the app or notebook output and save them to the `images/` folder.*
-
+[Sample 2](images/resnet_demo_2.png) 
 ---
 
 ### YOLO Pipeline — YOLOv26n
@@ -270,11 +265,8 @@ OUTPUT_DIR   = "visual-aid/yolo_dataset2"
 
 **Sample predictions — YOLO pipeline:**
 
-| Post-disaster image | Bounding box predictions | Damage heatmap |
-|:---:|:---:|:---:|
-| ![post](images/yolo_sample_post.png) | ![pred](images/yolo_sample_pred.png) | ![heat](images/yolo_sample_heatmap.png) |
+[Sample](images/yolo_demo.png) 
 
-> 🟢 No damage &nbsp;·&nbsp; 🟠 Moderate damage &nbsp;·&nbsp; 🔴 Total destruction
 
 *Add screenshots from the app or notebook output and save them to the `images/` folder.*
 
