@@ -1,6 +1,11 @@
 # VISTA: Visual Intelligence for Satellite Threat Analysis
 
-> Computer vision-powered building damage assessment from satellite imagery. Two independent pipelines were developed and benchmarked classifying post-disaster damage at pixel level: semantic segmentation (ResNet+U-Net) and object detection (YOLO).
+<img src="images/Vista-Highres-transp.png" width="450">
+
+
+**VISTA** was developed as the final project of the Data Science & AI Bootcamp at Le Wagon Barcelona by a [team of 3](#contributors), completed in 2 weeks in March 2026. 
+
+This is a computer vision-powered building damage assessment from satellite imagery. Two independent pipelines were developed and benchmarked classifying post-disaster damage at pixel level: semantic segmentation (ResNet+U-Net) and object detection (YOLO).
 
 ---
 
@@ -15,6 +20,7 @@
 - [Usage](#usage)
 - [Results](#results)
 - [Project Structure](#project-structure)
+- [Contributors](#contributors)
 - [References](#references)
 
 ---
