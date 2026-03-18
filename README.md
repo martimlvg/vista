@@ -1,6 +1,6 @@
 # VISTA: Visual Intelligence for Satellite Threat Analysis
 
-> Computer vision-powered building damage assessment from satellite imagery. Two independent pipelines were developed and benchmarked — object detection (YOLO) and semantic segmentation (U-Net) — each classifying post-disaster damage at pixel level.
+> Computer vision-powered building damage assessment from satellite imagery. Two independent pipelines were developed and benchmarked classifying post-disaster damage at pixel level: semantic segmentation (ResNet+U-Net) and object detection (YOLO).
 
 ---
 
@@ -32,8 +32,8 @@ VISTA leverages satellite imagery to automatically assess building damage follow
 
 Two independent approaches were developed and compared:
 
-- **YOLO-based pipeline** — object detection approach using YOLOv26 for building localization and damage classification
 - **U-Net segmentation pipeline** — two-stage semantic segmentation using ResNet-34 for localization and damage classification, based on the xView2 challenge first-place solution - [Link](https://github.com/DIUx-xView/xView2_first_place)
+- **YOLO-based pipeline** — object detection approach using YOLOv26 for building localization and damage classification, based on a challenge solution shared in Kaggle - [Link](https://www.kaggle.com/code/satvikjain09/ce712-yolov8)
 
 ---
 
@@ -233,7 +233,7 @@ OUTPUT_DIR   = "visual-aid/yolo_dataset2"
 | Notebook | Pipeline | Description |
 |----------|----------|-------------|
 | `xview2_pipeline_res34_3_classes.ipynb` | U-Net | ResNet-34 loc + cls, 3 damage classes |
-| `ce712-yolov8_log.ipynb` | YOLO | YOLOv26 training, evaluation and damage heatmaps |
+| `xview2_pipeline_yolo_3_classes.ipynb` | YOLO | YOLOv26 training, evaluation and damage heatmaps |
 
 ---
 
@@ -296,17 +296,21 @@ OUTPUT_DIR   = "visual-aid/yolo_dataset2"
 ```
 vista-damage-assessment/
 ├── resnet/
-│   ├── app/
+│   ├── xView2_first_place_3_classes/
 │   │   ├── zoo/
 │   │   │   ├── models.py          # ResNet-34 U-Net variants
 │   │   │   ├── senet.py
 │   │   │   └── dpn.py
 │   │   ├── train34_loc.py         # Localization training (ResNet-34)
 │   │   ├── train34_cls.py         # Classification training (ResNet-34, 3 classes)
+│   │   ├── tune34_cls.py          # Fine-tuning (ResNet-34)
 │   │   ├── create_masks.py        # Generate ground truth masks from JSON labels
 │   │   ├── utils.py               # Augmentations, metrics, preprocessing
 │   │   ├── losses.py              # ComboLoss, DiceLoss, FocalLoss
 │   │   ├── adamw.py               # AdamW optimizer
+│   │   ├── predict34_loc.py
+│   │   ├── predict34cls.py
+│   │   ├── create_submission.py
 │   │   └── weights/               # Saved model checkpoints
 │   └── xview2_pipeline_res34_3_classes.ipynb
 ├── yolo/
