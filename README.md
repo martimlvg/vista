@@ -27,7 +27,25 @@ This is a computer vision-powered building damage assessment from satellite imag
 
 ## 🔭 Overview
 
-VISTA leverages satellite imagery to automatically assess building damage following natural disasters. The system processes pre- and post-disaster image pairs and classifies each building pixel into one of three damage categories:
+VISTA was developed as the final project of the **Data Science & AI Bootcamp at Le Wagon Barcelona** by a team of 3, completed in 2 weeks. The project applies computer vision to automatically assess building damage from satellite imagery following natural disasters.
+
+### 🔴 Problem
+
+After a natural disaster, rapid and accurate damage assessment is critical to coordinate emergency response, allocate resources, and support insurance claims. Traditional assessment relies on ground teams, which is slow, costly, and dangerous in affected areas. Satellite imagery provides near-instant coverage of disaster zones, but manual analysis at scale is not feasible.
+
+VISTA addresses this by automating building damage classification at pixel level from pre and post-disaster satellite image pairs.
+
+### 👔 Stakeholders
+
+The primary use case is the **insurance industry** — specifically, damage assessment for property claims following events such as hurricanes, wildfires, floods, and earthquakes. The model is optimised to **minimise false positives** (i.e. avoid incorrectly classifying undamaged buildings as damaged), which is the critical requirement from an insurer's perspective before approving a claim.
+
+Secondary stakeholders include humanitarian organisations, civil protection agencies, and urban planners involved in disaster response and reconstruction.
+
+### 🗃️ Data
+
+The project uses the **xBD dataset** from the [xView2 Building Damage Assessment Challenge](https://xview2.org/), comprising over 20,000 pre/post-disaster satellite image pairs at 1024×1024 px resolution, covering disaster types including flooding, wildfire, tornado, hurricane, volcano eruption, and tsunami across multiple geographies.
+
+Original annotations define 5 damage classes. VISTA merges minor-damage and major-damage into a single **damaged** class, reducing label ambiguity and improving model precision:
 
 | Class | Label | Description |
 |-------|-------|-------------|
@@ -36,12 +54,26 @@ VISTA leverages satellite imagery to automatically assess building damage follow
 | 2 | Damaged | Minor or major structural damage |
 | 3 | Destroyed | Complete or near-complete destruction |
 
-Two independent approaches were developed and compared:
+### 🔬 Analysis
 
-- **U-Net segmentation pipeline** — two-stage semantic segmentation using ResNet-34 for localization and damage classification, based on the xView2 challenge first-place solution - [Link](https://github.com/DIUx-xView/xView2_first_place)
-- **YOLO-based pipeline** — object detection approach using YOLOv26 for building localization and damage classification, based on a challenge solution shared in Kaggle - [Link](https://www.kaggle.com/code/satvikjain09/ce712-yolov8)
+Two independent computer vision approaches were developed and benchmarked:
+
+- **U-Net segmentation pipeline** — two-stage semantic segmentation using ResNet-34 for building localization followed by per-pixel damage classification, based on the xView2 challenge first-place solution - [Link](https://github.com/DIUx-xView/xView2_first_place)
+- **YOLO-based pipeline** — object detection approach using YOLOv26 for building localization and damage classification via bounding boxes
+
+Both pipelines share the same 3-class output schema and were evaluated on the same held-out validation split to enable direct comparison.
+
+### ✅ Decision & Results
+
+The **U-Net / ResNet-34 pipeline** outperformed the YOLO approach across all metrics, achieving a macro precision of **0.83** and a localization Dice score of **0.85**, making it the primary model deployed in the Streamlit application. The YOLO pipeline, while faster to set up, achieved lower precision (0.62) and recall (0.37), reflecting the inherent difficulty of adapting a bounding-box detector to pixel-level damage assessment.
+
+| Pipeline | Macro Precision | Macro F1 | mAP@0.5 |
+|----------|----------------|----------|---------|
+| U-Net (ResNet-34) | **0.83** | **0.72** | — |
+| YOLO (YOLOv26n) | 0.62 | 0.46 | 0.41 |
 
 ---
+
 
 ## 📱 App Screenshots
 
